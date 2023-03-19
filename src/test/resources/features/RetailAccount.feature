@@ -3,14 +3,14 @@ Feature: Retail Application Account Feature
   Background: 
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'moh.sana@tekschool.com' and password '@Moh@123'
+    And User enter email 'moh.sana@tekschool.us' and password 'Moh@sana1'
     And User click on login button
     And User should be logged in into Account
 
   #passed
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'SanaTransformers' and Phone '1072028944'
+    And User update Name 'SanaTransformers' and Phone '1072028977'
     And User click on Update button
     Then User profile information should be updated
 
@@ -40,6 +40,7 @@ Feature: Retail Application Account Feature
     And User click on remove option of card section
     Then payment details should be removed
 
+	#passed
   Scenario: Verify User can add an Address
     When User click on Account option
     And User click on Add address option
@@ -49,7 +50,7 @@ Feature: Retail Application Account Feature
     And User click Add Your Address button
     Then address message should be displayed 'Address Added Successfully'
 
-  @test12345
+  #passed
   Scenario: Verify User can remove Address from Account
     When User click on Account option
     And User click on remove option of Address section
